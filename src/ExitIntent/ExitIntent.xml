@@ -39,11 +39,6 @@
 			<category>Appearance</category>
 			<description>This text will appear on the "no" button.</description>
 		</property>
-        <property key="cancelText" type="string" required="true" >
-            <caption>Cancel Text</caption>
-            <category>Appearance</category>
-            <description>This text will appear on the "cancel" button.</description>
-        </property>
         <property key="modalText" type="string" required="true" >
             <caption>Modal Header Text</caption>
             <category>Appearance</category>

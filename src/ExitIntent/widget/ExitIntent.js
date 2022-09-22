@@ -54,7 +54,6 @@ define([
         promptText: "",
         yesText: "",
         noText: "",
-        cancelText: "",
         modalText: "",
 
         // Internal variables.
@@ -102,12 +101,8 @@ define([
                         args.yes ||
                         this.translate("mxui.widget.DialogMessage", "ok"),
                     no: args.no,
-                    cancel:
-                        args.cancel ||
-                        this.translate("mxui.widget.DialogMessage", "cancel"),
                     yesHandler: args.yesHandler,
                     noHandler: args.noHandler,
-                    cancelHandler: args.cancelHandler,
                 }).show();
             };
 
@@ -142,7 +137,6 @@ define([
                                 content: theWidget.promptText,
                                 yes: theWidget.yesText,
                                 no: theWidget.noText,
-                                cancel: theWidget.cancelText,
                                 yesHandler: function () {
                                     // origNav.apply(theRouter, args);
                                     theWidget._runMicroflow(
@@ -167,7 +161,6 @@ define([
                                         );
                                     }
                                 },
-                                cancelHandler: function () {},
                             });
                         } else {
                             origNav.apply(theRouter, args);
